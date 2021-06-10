@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body" style="font-family: sans-serif">
+    <form action="" class="registration" onsubmit="return false" class="formclass">
+        <!-- заголовок формы -->
+        <div class="heading"><label> </label>
+            <label>Create Account</label>
+        </div>
+
+        <!-- имена -->
+        <div class="formRicht"> <label>First name*</label> <br> 
+            <input id="Name" type="text" class="formInput inputs1" descr="First name" placeholder="Enter your first name">
+        </div>
+        <div class="formLeft" > <label> Last name</label><br>
+        <input id="LastName" type="text" class="formInput inputs" placeholder="Enter your last name">
+    </div>
+
+    <!-- почта -->
+    <div class=email><label>Email*</label><br>
+        <input id="Mail" class="FormeMail inputs1" placeholder="Enter your email">
+    </div>
+
+    <!-- пороли -->
+    <div class="formRicht"    style="margin-top: 40px;"> <label>Password*</label><br> 
+        <input id="password"   type="password" class="formInput inputs1" placeholder="Enter your password">
+    </div>
+    <div class="formLeft" style="margin-top: 40px;"><label>Confirm Password*</label><br>
+    <input id="retype_password"   type="password" class="formInput inputs" placeholder="Enter your confirm password">
+    </div>
+    <!-- выбор пола и хобби -->
+    <div class="formRicht genderform" name="male_female" action="" method="post" class="Gender">
+        <label>Gender</label><br />
+        <div style="font-size: 80%; color: rgb(255, 255, 255);">
+        <input class="inputs" type="radio" name="Sex" value=Мужской checked="checked" /> <label>Male</label>
+        <input class="inputs" type="radio" name="Sex" value=Женский /> <label>Fmale</label> </div>
+    </div>
+    <div class="formLeft Hobbes"><label>Hobbes</label></br>
+        <div style="font-size: 80%; color: rgb(255, 255, 255);">
+        <input class="inputs" type="checkbox"  id="hobby" value="Music" checked="checked" /> Music
+        <input class="inputs" type="checkbox"  id="hobby" value="Sports" /> Sports
+        <input class="inputs" type="checkbox"  id="hobby" value="Travel" /> Travel
+    </div></div>
+    <!-- доход -->
+    <div class="formRicht"><label>Source of income</label></br>
+            <select id="recincome" class="colortext formInput inputs" name="list" size="2" class="formInput" multiple>
+            <option for="recincome" value="Work" id="income" class="listtext inputs" >Work</option>
+            <option for="recincome" value="Scholarship" id="income" class="listtext inputs" >Scholarship</option>
+            <option for="recincome" value="Benefits" id="income" class="listtext inputs" >Benefits</option>
+            <option for="recincome" value="part-time job" id="income" class="listtext inputs" >part-time job</option>
+            <option for="recincome" value="Several variants" id="income" class="listtext inputs" >Several variants</option>
+        </select></div>
+
+        <div class="formLeft" style="margin-top: 65px;"><label>Income</label> </br>
+            <input class="inputs" id="income_slider" style="width: 220px;" type="range" min="0" max="200000" step="1" value="1"> 
+        </div> 
+
+        <!-- файл -->
+        <div class="formRicht" style="margin-top: 65px;">
+            <label>Upload Profie Picture</label><br />
+        <input type="file"  /></div>
+
+        <div class="formLeft inputs" ><label>Age</label>  <br><input id="recage" value="18" class="formInput" placeholder="18"> </div>
+        <div class="email inputs" style="margin-top: 120px;"><label>Bio</label> <br><textarea id="recBIO" style="height: 70px; border-color:rgb(243, 204, 172);" class="FormeMail" name="comment"></textarea>
+        </div>
+
+        <div class="headend">
+            <input name="button" id="button" type="submit" type="checkbox" class="button checkbox__input">
+        <div id="text"></div>
+
+        </div>
+    </form>
+
+    <div class="user_info">
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
